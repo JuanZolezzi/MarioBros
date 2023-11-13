@@ -27,7 +27,7 @@ html, body {
 #gameCanvas {
     border: 1px solid black;
     margin-top: 20px;
-    background-image: url('Images/Background/background.png'); 
+    background-image: url('Imagenes/Background/background.png'); 
     box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.404);
 }
 

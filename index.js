@@ -20,9 +20,9 @@ const mario = new Image();
 let spriteIndex = 0;
 
 const marioSprites = [
-    'Images/Mario/mario1.png',
-    'Images/Mario/mario2.png',
-    'Images/Mario/mario3.png'
+    'Imagenes/Mario/mario1.png',
+    'Imagenes/Mario/mario2.png',
+    'Imagenes/Mario/mario3.png'
 ];
 
 const marioObj = {
@@ -49,7 +49,7 @@ function changeMarioSprite() {
         spriteIndex = (spriteIndex + 1) % marioSprites.length;
         mario.src = marioSprites[spriteIndex];
     } else {
-        mario.src = 'Images/Mario/marioJump.png';
+        mario.src = 'Imagenes/Mario/marioJump.png';
     }
 
 }
@@ -93,7 +93,7 @@ document.addEventListener("keydown", (event) => {
 //-----------------------Platform--------------------------
 
 const platform = new Image();
-platform.src = 'Images/Platform/platform.png'
+platform.src = 'Imagenes/Platform/platform.png'
 
 const platformObj = {
     width: 50,
@@ -130,7 +130,7 @@ function renderPlatforms() {
 let hpBar = document.querySelector('#hpBar');
 
 const hp = new Image();
-hp.src = 'Images/Objects/hp.png';
+hp.src = 'Imagenes/Objects/hp.png';
 
 const hpObj = {
     x: 650,
@@ -200,7 +200,7 @@ function checkEnemyCollision(player, objectsArr, hp) {
 //-------------------------Enemy---------------------------
 
 const enemy = new Image();
-enemy.src = 'Images/Objects/enemy.png';
+enemy.src = 'Imagenes/Objects/enemy.png';
 
 let enemyArr = [];
 
@@ -232,7 +232,7 @@ function moveEnemy() {
 //-------------------------Bullet-------------------------
 const bulletsBar = document.querySelector('#bulletsBar');
 const bullet = new Image();
-bullet.src = 'Images/Objects/bullet.png';
+bullet.src = 'Imagenes/Objects/bullet.png';
 
 let bulletsArr = [];
 document.addEventListener("keydown", (event) => {
@@ -287,7 +287,7 @@ function updateBullets() {
 //-----------------------Clouds---------------------------
 
 const cloud = new Image();
-cloud.src = 'Images/Objects/cloud.png';
+cloud.src = 'Imagenes/Objects/cloud.png';
 
 let cloudsArr = [];
 
